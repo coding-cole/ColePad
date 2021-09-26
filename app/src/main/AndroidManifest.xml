@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ColePad">
         <activity
-            android:name="com.codingC0l3.colepad.MainActivity"
+            android:name="com.codingC0l3.colepad.feature_note.presentation.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.ColePad.NoActionBar">

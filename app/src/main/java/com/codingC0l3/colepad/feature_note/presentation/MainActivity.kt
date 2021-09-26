@@ -1,4 +1,4 @@
-package com.codingC0l3.colepad
+package com.codingC0l3.colepad.feature_note.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
