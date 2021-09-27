@@ -54,16 +54,17 @@ fun NoteItem(
                         ColorUtils.blendARGB(note.color, 0x000000, 0.2f)
                     ),
                     topLeft = Offset(size.width - cutCornerSize.toPx(), -100f),
-                    size = Size(cutCornerSize.toPx()+100f, cutCornerSize.toPx()+100f),
+                    size = Size(cutCornerSize.toPx() + 100f, cutCornerSize.toPx() + 100f),
                     cornerRadius = CornerRadius(cornerRadius.toPx())
                 )
             }
         }
 
-        Column(modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp)
-            .padding(end = 32.dp)
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp)
+                .padding(end = 32.dp)
         ) {
             Text(
                 text = note.title,
@@ -87,7 +88,9 @@ fun NoteItem(
         ) {
             Icon(
                 imageVector = Icons.Default.Delete,
-                contentDescription = "Delete Note")
+                contentDescription = "Delete Note",
+                tint = MaterialTheme.colors.onSurface
+            )
         }
     }
 }
