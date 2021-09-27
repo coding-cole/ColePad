@@ -3,6 +3,7 @@ package com.codingC0l3.colepad.feature_note.domain.model
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.codingC0l3.colepad.ui.theme.*
+import java.lang.Exception
 
 @Entity
 data class Note(
@@ -19,3 +20,5 @@ data class Note(
         )
     }
 }
+
+class InvalidNoteException(message: String) : Exception(message)
